@@ -8,6 +8,7 @@ $txtcolor4: #0d6efd;
     body {
         display: flex;
         flex-direction: column;
+        background-color:#282826;
     }
 
     .header {
@@ -160,6 +161,9 @@ $txtcolor4: #0d6efd;
 
         &__blog{
             margin-top: 1em;
+            margin-top: 2em;
+            background-color:#022B3B;
+            border-radius: 5px;
             display: flex;
             flex-direction: column;
             justify-content:space-around;
@@ -173,6 +177,7 @@ $txtcolor4: #0d6efd;
         }
     
     }
+
  
 
 @media only screen and (min-width: 1024px){
