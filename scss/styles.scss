@@ -1,0 +1,522 @@
+$bgcolor1: #1BB0B8;
+$bgcolor2: #022B3B;
+$txtcolor1: #dcdcdc;
+$txtcolor2: black;
+$txtcolor3: rgb(97, 7, 7);
+$txtcolor4: #0d6efd;
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        &__logocontainer{
+            width:50%;
+            margin: auto;
+        }
+
+        &__logo{
+            display: flex;
+            width: 100%;
+            justify-content:center;
+        
+        }
+
+        &__menu{
+            margin-top: 60px;
+            display: block;
+        }
+
+        &__links{
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+        }
+
+        a {
+            /* display: inline;*/
+             padding: 12px;
+            //  background-color: $bgcolor1;
+         }
+        
+    }
+    
+    .footer{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+
+            &__lista{
+                display: flex;
+                flex-direction:column;
+                border: 1px black solid; 
+                padding: 0;
+                text-align: center;
+            }
+            &__link{
+                flex: 1;       
+            }
+        
+
+        &__copyright{
+            display: flex;
+            justify-content:center;
+        }
+        &__socialnetwork{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+    
+            img{
+                padding: 1em;
+            }
+        }
+        
+        &__p{
+            display: flex;
+            justify-content:center;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        border: 2px solid #e7e7e8;
+        background-color: #5f5f5f;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    
+
+    
+    li a {
+        display: flex;
+        flex-direction:column;
+        font-style: italic;
+        color: rgb(97, 7, 7);
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+
+        &__description{
+            background-color: $bgcolor2;
+            text-align: center;
+            line-height: 25px;  
+            h2{
+                color:$txtcolor1;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p{
+                color:$txtcolor1;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+            img{
+                width:70%;
+            }
+        }
+
+        &__courses{
+            margin-top: 1em;
+            display: flex;	
+            flex-direction: column;
+            background-color:$bgcolor2;
+            text-align: center;
+            div{
+                flex: 1;
+            }
+            h2{
+                color:$txtcolor1;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h3{
+                color:$txtcolor1;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p{
+                color:$txtcolor1;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+        }
+
+        &__blog{
+            margin-top: 1em;
+            background-color:rgb(219, 243, 233);
+            border: 1px solid;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            gap:1em;
+    
+            div{
+                text-align: center;
+                padding: 1em;
+                
+            }
+        }
+    
+    }
+ 
+
+@media only screen and (min-width: 1024px){
+
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color:#282826;
+    }
+    
+    ul {
+        // list-style-type: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    li{
+        display: inline;
+    }
+
+    a:hover{
+        background-color: #d5d4d6;
+    }
+
+
+    
+    li a {
+        font-style: italic;
+        color: rgb(97, 7, 7);
+        text-align: right;
+        margin-left: 5em;
+    }
+    
+    
+    h1{
+        grid-area: titulo;
+        text-align: center;
+        margin-top: 2%;
+        margin-left: 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:white;
+    }
+
+    h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:white;
+    }
+    
+  
+     .header {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+
+        &__logocontainer{
+            margin-top: 20px;
+            padding:5px;
+            width: 25%
+        }
+
+        &__logo{
+            margin-left: 50px;
+            width: 50%;
+        
+        }
+
+        &__menu{
+            margin-top: 60px;
+            display: block;
+        }
+
+        &__links{
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+        }
+        
+    }
+
+    .footer{
+        width:100%;
+        background-color:#04031D;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; 
+        padding: 2em;
+        &__lista{
+            list-style-type: none;
+            background-color:#d5d4d6;
+            display: flex;
+            flex-direction:column;
+            padding: 20px;
+    
+              &__link{
+                flex: 1;
+                text-align:center;
+                }
+            }
+    
+            &__p{
+                display: flex;
+                justify-content:center;
+            }
+            &__socialnetwork{
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around;
+        
+                img{
+                    padding: 1em;
+                }
+            }
+    }
+
+    .indexmain{
+        background-color:white;
+    }
+    .maincontainer{
+
+        &__hometitle{
+            // grid-area: titulo;
+            color:$bgcolor2;
+            // background-color: $bgcolor2;
+        }
+
+        &__description{
+            // grid-area: descripcion;
+            background-color:$bgcolor2;
+            // align-content: center;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        &__courses{
+            // grid-area:cursos;
+            display: flex;	
+            flex-direction: column;
+            background-color:#022B3B;
+            text-align: center;
+            margin-top:0;
+    
+            div{
+                flex: 1;
+            }
+        }
+
+        &__blog{
+            // grid-area: blog;
+            margin-top: 2em;
+            background-color:#022B3B;
+            border-radius: 5px;
+            // display: flex;
+            // flex-direction: row;
+            justify-content:space-around;
+    
+            div{
+                // margin:1em;
+                text-align: center;
+                padding: 1em;
+                // background-color:#1BB0B8;
+            }
+    
+            h3{
+                color:#000;
+            }
+    
+            p{
+                color:#022B3B;
+            }
+        }
+      
+    }
+    
+    .biocontainer{
+
+        margin-top:3em;
+
+        &__imagen{
+            width:70%;
+        }
+
+        &__titles{
+            margin-top:2em;
+            text-align:justify;
+            &--highlight{
+                color:$txtcolor4;
+            }
+        }
+
+        &__bio{
+            margin-top:3em;
+            color:white;
+            text-align: justify;
+        }
+
+        &__title{
+            margin-top: 3em;
+        }
+
+        &__empresa{
+
+            margin-top: 5em;
+
+            &--siemens{
+                width:400%;
+            }
+            &--andes{
+                width:300%;
+            }
+
+            &--revstar{
+                width:350%;
+            }
+
+            &--cesvi{
+                width:300%;
+            }
+        }
+
+        &__studytitle{
+            margin-top: 5em;
+            text-align: center;
+        }
+
+        &__study{
+            &--mit{
+                width:60%;
+                margin-bottom: 2em;
+            }
+
+            &--uct{
+                width:60%;
+                margin-bottom: 2em;
+            }
+
+            &--iebs{
+                width:60%;
+                margin-bottom: 2em;
+            }
+
+            &--certiprof{
+                width:60%;
+                margin-bottom: 4em;
+            }
+
+            &--unal{
+                width:60%;
+                margin-bottom: 3em;
+            }
+        }
+
+        h2{
+            margin-top:1em;
+            margin-bottom:2em;
+        }
+
+    }
+
+    .pricing{
+        h1{
+            margin-top:1em;
+            margin-bottom:2em;
+            color:white;
+        }
+
+        h2{
+            margin-top:1em;
+            margin-bottom:2em;
+            color:$txtcolor2;
+        }
+    }
+
+    .contactpage{
+        background-color:white;
+        &__header{
+            margin-top:2em;
+            padding-top:1em;
+            margin-bottom:2em;
+            color:$txtcolor2;
+            justify-content:center;
+        }
+    }
+
+    .coursepage{
+        background-color:white;
+        &__header{
+            margin-top:3em;
+            padding-top:3em;
+            margin-bottom:2em;
+            color:$txtcolor2;
+            justify-content:center;
+        }
+
+        &__coursetable{
+            justify-content:center;
+            align-items:center;
+            
+        }
+
+        &__fila{
+            // align-items:center;
+            text-align:center;
+            align-self: center;
+        }
+
+        &__courselist{
+            list-style-type:circle;
+            background-color: transparent;
+            border: none;
+            text-align:center;
+            li{
+                display: block;
+                text-align:center;
+            }
+        }
+    }
+
+
+    
+    .secondMenu ul{
+        display: inline-block;
+    }
+    
+     .servicesContainer{
+        margin: 50px;
+        border-radius: 10px;
+        display: flex;
+        justify-content:center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        div{
+            border: 1px solid;
+            border-radius: 10px;
+            background-color:rgb(232, 241, 237);
+            margin: 10px;
+            text-align: center;
+        }
+    }
+    
+
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contáctanos | CM Digital</title>
+    <meta name="description" content="Cómo puedes contactar a Carlos Méndez">
+    <meta name="keywords" content="contacto carlos méndez, correo carlos méndez, carlos méndez, carlos méndez tafur, correo CMDigital">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__logocontainer">
+          <img class="header__logo" src="../resources/images/logo.png" alt="logo CM Digital">
+        </div>
+        <nav class="header__menu">
+          <div>
+            <ul class="navbar navbar-dark bg-dark navbar-expand-sm header__links">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quiensoy.html">Quien soy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://diccionariomanagement-cmdigital.gr8.com">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <div class="contactpage container">
+      <section class="contactpage__header row">
+        <h1>Formulario de Contacto</h1>
+        <p>Diligenciando este formulario nos podremos poner en contacto contigo para enviarte información relacionada con los cursos de tu interés, las mejores ofertas y contenido de lás últimas tendencias de los temas abordados en el blog.</p>
+      </section>
+
+          <div class="row g-5">
+            <div class="col-lg-2"></div>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Datos Personales</h4>
+                <form method="get" enctype="application/x-www-form-urlencoded" class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label for="firstName" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Nombre es requerido
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Apellido es requerido
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Por favor ingresa un email valido
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                    <div class="invalid-feedback">
+                      Ingresa tu dirección de facturación
+                    </div>
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">País</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">selecciona...</option>
+                      <option>Colombia</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Selecciona un país valido
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">Ciudad</label>
+                    <select class="form-select" id="state" required>
+                      <option value="">Selecciona...</option>
+                      <option>Bogotá</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Selecciona una ciudad valida
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Zip requerido.
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">Estoy de acuerdo con recibir información de cursos periódicamente.</label>
+                </div>
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Guardar esta información para otra ocasión.</label>
+                </div>
+
+                <hr class="my-4">
+      
+                <button class="w-50 btn btn-primary btn-lg" type="submit">Enviar</button>
+                <input class="w-40 btn btn-danger btn-lg" type="reset" name="reset" value="Limpiar campos" />
+              </form>
+            </div>
+          </div>
+    </main>
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Contactanos en nuestras redes sociales:</span>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/camt587" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/carlos_mtafur" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/carlos_mtafur" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/carlosmtafur/" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i></a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Carlos Méndez Digital
+              </h6>
+              <p>
+                Las últimas tendencias en Management, agilidad e innovación.
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Links útiles</h6>
+              <p>
+                <a href="#!">Sobre mi</a>
+              </p>
+              <p>
+                <a href="#!">Contacto</a>
+              </p>
+              <p>
+                <a href="#!">Términos y condiciones</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Servicios</h6>
+              <p>
+                <a href="#!">Cursos</a>
+              </p>
+              <p>
+                <a href="#!">Consultorias</a>
+              </p>
+              <p>
+                <a href="#!">Recursos</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p><i class="fas fa-home me-3"></i>  BOG, cra 62 # 99 - 86</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                carlosmendez@cmdigital.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 57 311 8360255</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="cmdigital.com"
+          >Carlos Mendez Digital</a>
+      </div>
+    </footer>
+  </body>
+  </html>
+  
